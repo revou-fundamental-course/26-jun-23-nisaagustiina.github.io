@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>E-Groceries</title>
+    </head>
+    <body class="container">
+        <!--header-->
+        <header class="header">
+            <div class="logo">moqups</div>
+            <div class="nav-bar">
+                <div class="nav-item" id="item-1"><a href="#home">Home</a></div>
+                <div class="nav-item" id="item-2"><a href="#our-package">Our Product</a></div>
+                <div class="nav-item" id="item-3"><a href="#call-us">Call Us</a></div>
+            </div>
+        </header>
+        <!--main-->
+        <main class="main">
+            <!--Banner-->    
+            <section id="home">
+                <div class="banner">
+                    <h1 class="main-head">Top Rated<br>E-Groceries Shop in Indonesian</h1>
+                    <p class="sub-head">Every Day with best ingredients</p>
+                </div>            
+            </section>
+            <!--Form Menu-->
+            <section class="menu">
+                <div class="form" id="form-kiri">   
+                    <div class="slider"> 
+                        <div class="slide-coment" id="pic1">
+                            <img src="./img/basket-full-3.png" alt="vegetables" class="layanan">
+                            <p>"Setiap hari beli sayur buah yang fresh disini"</p>
+                            <div class="people">
+                                <img src="./img/1.jpg" alt="profile-pic" id="profile-pic">
+                                <div class="keterangan">
+                                    <h3>Florence Hudges</h3>
+                                    <p>Ibu Rumah Tangga, 28</p>    
+                                </div>
+                            </div>       
+                        </div>
+                        <div class="slide-coment" id="pic2">
+                            <img src="./img/service-fix2.png" alt="vegetables" class="layanan">
+                            <p>"Pelayanan baik dan ramah"</p>
+                            <div class="people">
+                                <img src="./img/2.jpg" alt="profile-pic" id="profile-pic">
+                                <div class="keterangan">
+                                    <h3>Cornelius Frindavan</h3>
+                                    <p>Penjual street food, 25</p>  
+                                </div>  
+                            </div>       
+                        </div>     
+                        <div class="slide-coment" id="pic3">
+                            <img src="./img/product.png" alt="vegetables" class="layanan">
+                            <p>"Produk lengkap dan fresh"</p>
+                            <div class="people">
+                                <img src="./img/3.jpg" alt="profile-pic" id="profile-pic">
+                                <div class="keterangan">
+                                    <h3>Rizzetta Cornelia</h3>
+                                    <p>Manager restaurant, 26</p>    
+                                </div>
+                            </div>       
+                        </div>     
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        <br>
+                        <div>
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div> 
+                    </div>
+                    <section class="pilihan" id="pilihan">
+                        <div class="space-benefit">
+                            <div class="num-benefit">
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                            </div>
+                            <div class="benefit">
+                                <p>Bahan-bahan terpilih dan segar.</p>
+                                <p>Khusus member dapatkan diskon 10% setiap pembelian.</p>
+                                <p>Mudah diakses, pengantaran cepat dan customer service 24 jam.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="form" id="form-kanan">
+                    <h1 style="margin: 0px;">Contact Us</h1>
+                    <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                    <form class="form-utama" onsubmit="return validateForm()"> 
+                        <label for="input-nama">Nama:</label><br>
+                        <input type="text" name="input-nama" id="input-nama" placeholder="Masukkan nama lengkap anda" >
+                        <p></p>
+                        <label for="input-email">Email:</label><br>
+                        <input type="email" name="input-email" id="input-email" placeholder="example@email.com" >
+                        <p></p>
+                        <p></p>
+                        <label for="input-phone">Nomor Telepon:</label><br>
+                        <input type="text" name="input-phone" id="input-phone" placeholder="Nomor telepon anda" >
+                        <p></p>
+                        <label for="input-pesan">Pesan:</label><br>
+                        <textarea name="input-pesan" id="input-pesan" placeholder="Masukkan pesan anda disini.." ></textarea>
+                        <p></p>
+                        <input class="button1" id="button1" type="submit" value="SEND"></input>
+                    </form>
+                </div>
+            </section>   
+            <section id="our-package">
+                <div class="banner-our-package">
+                   <p>Our Package</p>     
+            </section>
+            <section id="daftar-package">
+                <div class="product-atas">
+                    <img src="./img/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-1">
+                            <h3>Fresh Vegetable</h3>
+                            <p>Sayuran segar langsung dari sumber pertanian terbaik</p>    
+                        </div>
+                    </div> 
+                    <img src="./img/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-2">
+                            <h3>Fresh Fruit</h3>
+                            <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>    
+                        </div>
+                    </div>  
+                    <img src="./img/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-3">
+                            <h3>Instant Delivery</h3>
+                            <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>    
+                        </div>
+                    </div>        
+                </div>
+                <div class="product-bawah">
+                    <img src="./img/star.png" alt="star" id="star">
+                    <div class="p-1">
+                        <div class="isi-p-1">
+                            <h3>Kitchen Ingredient</h3>
+                            <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>    
+                        </div>
+                    </div> 
+                    <img src="./img/star.png" alt="star" id="star">
+                    <div class="p-1">
+                        <div class="isi-p-1">
+                            <h3>Kitchen Set</h3>
+                            <p>Segala jenis alat masa untuk membantu kamu memasak</p>    
+                        </div>
+                    </div>  
+                    <img src="./img/star.png" alt="star" id="star">
+                    <div class="p-1">
+                        <div class="isi-p-1">
+                            <h3>Bunding Set</h3>
+                            <p>Bingung masak apa? <br>
+                                Sudah tersedia paket untuk kamu masak di dapur mu
+                            </p>    
+                        </div>
+                    </div>
+                </div>   
+            </section>
+            <section id="call-us">
+                <h1>Need Help?</h1>
+                <p>If you need any help, please call us with click this butoon.</p>
+                <button id="button-form"><a href="#form-kanan"></a>Customer Service</button>
+            </section>
+        </main>
+        <!--footer-->
+        <footer class="footer">
+            <h3 style="font-weight: 700; font-style: italic;">moqups</h3>
+            <p style="padding: 0;">Copyrights © 2023 Nisa Agustina.</p>
+        </footer>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,802 @@
+.container {
+    background-color: #f5f5f5;
+    font-family: "Open Sans", sans-serif;
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 3px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    width: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 13px;
+    padding-top: 0px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    height: 50px;
+    padding: 0;
+}
+
+.nav-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#item-1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#item-3 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logo {
+    padding-top: 9px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.main {
+    background-color: white;
+    width: 100%;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner {
+    text-align: center;
+}
+
+.main-head {
+    color: rgb(59, 71, 84);
+    font-size: 64px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.sub-head {
+    color: rgb(121, 141, 163);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+}
+
+#form-kiri {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.slide-coment .layanan {
+    width: 410px;
+    height: 273px;
+    border: 2px white;
+    border-radius: 4px;
+}
+
+#form-kanan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(202, 202, 202);
+    background-color: rgb(203, 204, 204);
+    border-radius: 5px;
+    padding: 5%;
+    height: fit-content;
+}
+
+#form-kanan label {
+    font-weight: 700;
+}
+
+#form-kanan input {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+#form-kanan textarea {
+    width: 100%;
+    height: 70px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+#form-kanan .button1 {
+    width: 100%;
+    height: 40px;
+    color: white;
+    border: 0px;
+    background-color: rgb(32, 33, 43);
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: auto;
+    position: relative;
+    padding: 0;
+    border-image-slice: 1;
+    border-width: 5px;
+}
+
+.slide-coment {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: left;
+    font-style: italic;
+    padding: 10px 20px;
+}
+
+.people {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+}
+
+.people h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.people .keterangan {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.slide-coment #profile-pic {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slider .prev,
+.slider .next {
+    display: flex;
+    font-style: normal;
+    cursor: pointer;
+    position: absolute;
+    top: 73%;
+    width: auto;
+    padding: 5px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.slider .next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+    color: #717171;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+#pilihan {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.header-space {
+    text-align: left;
+    font-weight: 700;
+}
+
+.space-benefit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.num-benefit p {
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 50%;
+    color: rgb(159, 175, 193);
+    background-color: rgb(202, 202, 202);
+    font-weight: 700;
+    text-align: center;
+    padding: 13px 20px;
+}
+
+.benefit p {
+    padding: 12px 20px;
+    margin: 0px;
+    text-align: justify;
+}
+
+#our-package {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-our-package {
+    box-sizing: border-box;
+    padding: 50px 10px;
+    background-color: rgb(203, 204, 204);
+    margin: 20px 0;
+}
+
+.banner-our-package p {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#daftar-package {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+}
+
+#daftar-package img {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+}
+
+#daftar-package .product-atas {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#daftar-package .p-1 {
+    display: flex;
+    width: 300px;
+}
+
+#daftar-package .product-bawah {
+    display: flex;
+    flex-direction: row;
+}
+
+#call-us {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(203, 204, 204);
+    border-bottom: 1px solid rgb(203, 204, 204);
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+#call-us p {
+    text-align: center;
+    width: 500px;
+    height: 36px;
+}
+
+#call-us h1 {
+    font-size: 32px;
+    margin: 2%;
+}
+
+#call-us #button-form {
+    width: 214px;
+    height: 40px;
+    margin-top: 3%;
+    color: white;
+    border: 0px;
+    font-weight: 700;
+    background-color: rgb(32, 33, 43);
+    border-radius: 3px;
+}
+
+#call-us a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    font-size: 11px;
+    color: rgb(121, 141, 163);
+    padding-top: 20px;
+    width: 100%;
+}
+
+.footer h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 75%;
+        margin: auto;
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #daftar-package .product-atas {
+        flex-direction: column;
+        align-items: center;
+    }
+    #daftar-package .product-bawah {
+        flex-direction: column;
+        align-items: center;
+    }
+    #daftar-package .p-1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        align-items: center;
+    }
+    .banner h1 {
+        font-size: large;
+    }
+    .banner p {
+        font-size: medium;
+    }
+    .menu {
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .form {
+        width: 90%;
+        margin: 0;
+    }
+    #form-kiri {
+        margin: 0;
+    }
+    .slider {
+        width: 90%;
+    }
+    .slide-coment {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .slide-coment P {
+        height: 50px;
+    }
+    .people #profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+    .pilihan {
+        font-size: 12px;
+        margin-bottom: 10%;
+    }
+    .people {
+        margin-top: 0;
+    }
+    .keterangan {
+        font-size: 10px;
+    }
+    .slide-coment .layanan {
+        width: 250px;
+        height: 186px;
+    }
+    #daftar-package {
+        font-size: small;
+    }
+    #daftar-package .product-atas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #daftar-package .product-bawah {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .p-1 {
+        margin: auto;
+        text-align: center;
+    }
+    #call-us {
+        text-align: center;
+    }
+    #call-us p {
+        width: 50%;
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #daftar-package .product-atas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .product-bawah {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #call-us {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .logo {
+        margin-bottom: 3%;
+    }
+    .main-head {
+        width: 100%;
+    }
+    .sub-head {
+        width: 100%;
+    }
+    .banner h1 {
+        font-size: xx-large;
+    }
+    .banner p {
+        font-size: large;
+    }
+    .slider {
+        width: 90%;
+    }
+    .slide-coment {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .slide-coment P {
+        height: 50px;
+    }
+    .people #profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+    .pilihan {
+        font-size: 14px;
+        margin-bottom: 10%;
+    }
+    .people {
+        margin-top: 0;
+    }
+    .keterangan {
+        font-size: 14px;
+    }
+    .slide-coment .layanan {
+        width: 250px;
+        height: 186px;
+    }
+    #daftar-package {
+        font-size: small;
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #form-kanan {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    #daftar-package .product-atas {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    #daftar-package .product-bawah {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    #call-us {
+        text-align: center;
+    }
+    #call-us p {
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 30%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .logo {
+        margin-bottom: 3%;
+    }
+    /* .nav-item {
+        border: 0;
+        border-bottom: 1px solid grey;
+    } */
+    .banner h1 {
+        font-size: large;
+    }
+    .banner p {
+        font-size: medium;
+    }
+    .menu {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .form {
+        width: 90%;
+        margin: 0;
+    }
+    #form-kiri {
+        margin: 0;
+    }
+    .slider {
+        width: 90%;
+    }
+    .slide-coment {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .slide-coment P {
+        height: 50px;
+    }
+    .people #profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+    .pilihan {
+        font-size: 12px;
+        margin-bottom: 10%;
+    }
+    .people {
+        margin-top: 0;
+    }
+    .keterangan {
+        font-size: 10px;
+    }
+    .slide-coment .layanan {
+        width: 250px;
+        height: 186px;
+    }
+    #daftar-package {
+        font-size: small;
+    }
+    #daftar-package .product-atas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .product-bawah {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .p-1 {
+        width: 100%;
+    }
+    #call-us {
+        text-align: center;
+    }
+    #call-us p {
+        width: 100%;
+        font-size: smaller;
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .logo {
+        margin-bottom: 3%;
+    }
+    /* .nav-item {
+        border: 0;
+        border-bottom: 1px solid grey;
+    } */
+    .banner h1 {
+        font-size: large;
+    }
+    .banner p {
+        font-size: medium;
+    }
+    .menu {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .form {
+        width: 90%;
+        margin: 0;
+    }
+    #form-kiri {
+        margin: 0;
+    }
+    .slider {
+        width: 90%;
+    }
+    .slide-coment {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .slide-coment P {
+        height: 50px;
+    }
+    .people #profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+    .pilihan {
+        font-size: 12px;
+        margin-bottom: 10%;
+    }
+    .people {
+        margin-top: 0;
+    }
+    .keterangan {
+        font-size: 10px;
+    }
+    .slide-coment .layanan {
+        width: 250px;
+        height: 186px;
+    }
+    #daftar-package {
+        font-size: small;
+    }
+    #daftar-package .product-atas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .product-bawah {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .p-1 {
+        width: 100%;
+    }
+    #call-us {
+        text-align: center;
+    }
+    #call-us p {
+        width: 100%;
+        font-size: smaller;
+        margin-bottom: 20%;
+    }
+}
